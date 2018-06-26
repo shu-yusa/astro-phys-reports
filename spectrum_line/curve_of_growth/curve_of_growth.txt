@@ -1,0 +1,31 @@
+set term postscript eps enhanced color
+set output 'curve_of_growth.eps'
+set xrange[-2:6]
+unset key
+unset label 
+set xlabel 'log {/Symbol b}_0'
+set ylabel 'log W/{/Symbol D}{/Symbol n}_D
+set label 'A_0=0.5'at first 3.0,first -1.5
+set label 'a=10^{-3}'at first 3.0,first -1.0
+set size 0.5,0.5 
+plot 'curve_of_growth.dat'with line
+set term x11
+
+set term postscript eps enhanced color
+set output 'curve_of_growth_with_data.eps'
+set xrange[-2:6]
+unset key
+set key right bottom
+unset label
+set xlabel 'log {/Symbol b}_0'
+set ylabel 'log W/{/Symbol D}{/Symbol n}_D
+set label 'A_0=0.5'at first -1.0,first 1.0
+set label 'a=10^{-3}'at first -1.0,first 1.5
+set size 0.6,0.6 
+plot 'curve_of_growth.dat'with line title 'Theoretical curve',\
+     'Equ_width_FeI.dat'title 'Fe I',\
+     'Equ_width_TiI.dat'title 'Ti I',\
+     'Equ_width_FeII.dat'title 'Fe II',\
+     'Equ_width_TiII.dat'title 'Ti II'
+set term x11
+

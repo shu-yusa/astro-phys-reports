@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper,titlepage]{jarticle}
+\usepackage{layout}
+\usepackage[dvips]{graphicx}
+\usepackage{float}
+%\pagestyle{empty}
+%\pagestyle{headings}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=50mm,height=50mm]{.eps}
+%\caption{}
+%\end{center}
+%\end{figure}
+\setlength{\voffset}{-2.5cm}
+\setlength{\hoffset}{-30pt}
+\setlength{\textwidth}{430pt}
+\setlength{\textheight}{680pt}
+\begin{document}
+%\layout
+\title{}
+\author{A4SB2121}
+\date{}
+%\maketitle
+
+\begin{center}
+恒星物理学Iレポート
+\end{center}
+
+\begin{flushright}
+A4SB2121  遊佐秀作
+\end{flushright}
+
+\underline{問題5.5}
+
+$\beta_{\nu} = \sigma_\nu / \kappa_c$なので、(5.96)より
+
+
+
+
+
+\begin{eqnarray*}
+ R_\nu &=& \left[ \frac{\sqrt{\displaystyle\frac{3\kappa_c}{\kappa_c+\sigma_\nu}}B_0+
+                       B_1\displaystyle\frac{\kappa_c}{\sigma_\nu+\kappa_c}}
+	            {\sqrt{\displaystyle\frac{3\kappa_c}{\kappa_c+\sigma_\nu}}+
+		     \displaystyle\frac{3}{2}}
+          \right]
+	  \left[ \frac{\sqrt{3}+\displaystyle\frac{3}{2}}{\sqrt{3}B_0+B_1} \right] \\
+       &=&  \left[ \frac{\sqrt{\displaystyle\frac{3}{1+\beta_\nu}}+
+                   \displaystyle\frac{B_1}{B_0}\displaystyle\frac{1}{1+\beta_\nu}}
+                    {\sqrt{\displaystyle\frac{3}{1+\beta_\nu}}+ 
+		    \displaystyle\frac{3}{2}}
+          \right]
+          \left[ \frac{\sqrt{3}+\displaystyle\frac{3}{2}}
+	  {\sqrt{3}+\displaystyle\frac{B_1}{B_0}} \right] \\
+\end{eqnarray*}
+
+
+$\beta_\nu=\beta_0 H(a,v)$と書くとVoigt関数を数値的に積分することで
+ residual fluxの値を求めることができる。$a=10^{-3}$と仮定し、$(B_1/B_0)=1,2,3$
+ のそれぞれの場合について$\beta_0=1,10,100,1000,10^4$のときのresidual fluxを
+ $v$の関数としてプロットすると下のようになる。
+ $\beta_\nu=\sigma_\nu/\kappa_c$が大きくなるにつれて$v=0$での$R_\nu$が
+ 0に近づいているのがわかる。
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_scat_1.eps}
+\caption{$B_1/B_0=1$のとき}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_scat_2.eps}
+\caption{$B_1/B_0=2$のとき}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_scat_3.eps}
+\caption{$B_1/B_0=3$のとき}
+\end{center}
+\end{figure}
+
+\underline{問題5.6}
+
+吸収過程だけなので$\beta_\nu=\kappa_\nu/\kappa_c$であるから、(5.97)より
+
+\begin{eqnarray*}
+R_\nu &=& \frac{\sqrt{3}B_0+B_1\displaystyle\frac{\kappa_c}{\kappa_\nu+\kappa_c}}
+               {\sqrt{3}B_0+B_1} \\
+      &=& \frac{\sqrt{3}+\displaystyle\frac{B_1}{B_0}\displaystyle
+                \frac{1}{1+\beta_\nu}}
+               {\sqrt{3}+\displaystyle\frac{B_1}{B_0}} \\
+\end{eqnarray*}
+問題5.5と同様にVoigt関数を積分して$R_\nu$を計算し、種々の場合に
+プロットすると以下のようになる。
+吸収過程だけの場合は$\beta_\nu=\kappa_\nu/\kappa_c$を大きくしていくと$v=0$での値は
+有限でありスペクトル線の形は短冊形に近づいているのがわかる。
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_abs_1.eps}
+\caption{$B_1/B_0=1$のとき}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_abs_2.eps}
+\caption{$B_1/B_0=2$のとき}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=150mm,height=100mm]{residual_flux_abs_3.eps}
+\caption{$B_1/B_0=3$のとき}
+\end{center}
+\end{figure}
+\end{document}
+

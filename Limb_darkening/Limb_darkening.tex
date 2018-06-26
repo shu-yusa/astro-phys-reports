@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper,titlepage]{jarticle}
+\usepackage{layout}
+\usepackage[dvips]{graphicx}
+\usepackage{float}
+\pagestyle{empty}
+%\pagestyle{headings}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=50mm,height=50mm]{.eps}
+%\caption{}
+%\end{center}
+%\end{figure}
+\setlength{\voffset}{-2.5cm}
+\setlength{\hoffset}{-30pt}
+\setlength{\textwidth}{430pt}
+\setlength{\textheight}{680pt}
+\begin{document}
+%\layout
+\title{}
+\author{A4SB2121　遊佐秀作}
+\date{}
+%\maketitle
+\begin{center}
+ 恒星物理学Iレポート
+\end{center}
+\begin{flushright}
+  A4SB2121　　遊佐秀作
+\end{flushright}
+\underline{問題2.1}
+
+最小二乗法を用いてフィッティングを行うと、$I(0,\mu)/I(0,1)=a+b\mu$における
+係数$a,b$は
+\begin{eqnarray*}
+ a=0.41 \\ 
+ b=0.62
+\end{eqnarray*}
+と求まる(有効数字2桁)。この係数を用いてlimb darkeningを図示し、観測結果と
+比べると以下のようになる。
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=160mm,height=110mm]{Limb_darkening.eps}
+%\caption{Limb darkening}
+\end{center}
+\end{figure}
+\end{document}

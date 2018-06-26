@@ -1,0 +1,14 @@
+set  term postscript eps enhanced color
+set output 'Lane_Emden.eps'
+set size 0.5,0.5
+unset label
+set label 'n=4' at first 4.0,first 0.4
+set label 'n=0' at first 0.3,first 0.1
+set xlabel '{/Symbol x}'
+set ylabel '{/Symbol q}'
+set xrange [0:16]
+set yrange [0:1]
+plot 'Lane_Emden0.dat'with line title 'n=0','Lane_Emden1.dat'with line title 'n=1',\
+     'Lane_Emden2.dat'with line title 'n=2','Lane_Emden3.dat'with line title 'n=3',\
+     'Lane_Emden4.dat'with line title 'n=4'
+set term x11

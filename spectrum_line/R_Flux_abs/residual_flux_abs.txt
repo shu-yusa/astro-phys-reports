@@ -1,0 +1,73 @@
+set term postscript eps enhanced color
+set output 'RF_abs_1.eps'
+
+unset label
+unset ytics
+set xtics 1 
+set ytics 0.1
+set xrange [0:10]
+set yrange [0.3:1]
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label  'B_1/B_0=1' at first 7,first  0.7 
+set samples 4000
+unset grid
+
+set size 0.6,0.5
+unset key
+plot 'RF_B1_b0_abs.dat'with line,\
+     'RF_B1_b1_abs.dat'with line,\
+     'RF_B1_b2_abs.dat'with line,\
+     'RF_B1_b3_abs.dat'with line,\
+     'RF_B1_b4_abs.dat'with line
+set term x11
+
+set term postscript eps enhanced color
+set output 'RF_abs_2.eps
+
+unset tics
+set xtics 1
+set ytics 0.1
+unset label
+set xrange [0:10]
+set yrange [0.3:1]
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label  'B_1/B_0=2' at first 7,first  0.55 
+set samples 4000
+set samples 4000
+unset grid
+set size 0.6,0.5
+unset key
+plot 'RF_B2_b0_abs.dat'with line,\
+     'RF_B2_b1_abs.dat'with line,\
+     'RF_B2_b2_abs.dat'with line,\
+     'RF_B2_b3_abs.dat'with line,\
+     'RF_B2_b4_abs.dat'with line
+set term x11
+
+set term postscript eps enhanced color
+set output 'RF_abs_3.eps
+
+unset tics
+set xtics 1
+set ytics 0.1
+unset label
+set xrange [0:10]
+set yrange [0.3:1]
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label  'B_1/B_0=3' at first 7,first  0.45 
+set samples 4000
+set samples 4000
+unset grid
+set size 0.6,0.5
+unset key
+plot 'RF_B3_b0_abs.dat'with line,\
+     'RF_B3_b1_abs.dat'with line,\
+     'RF_B3_b2_abs.dat'with line,\
+     'RF_B3_b3_abs.dat'with line,\
+     'RF_B3_b4_abs.dat'with line
+set term x11
+
+

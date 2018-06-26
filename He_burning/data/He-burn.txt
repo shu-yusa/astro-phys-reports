@@ -1,0 +1,10 @@
+set xrange [0:0.5]
+
+set xtics ("1"0.1,"2"0.2,"3"0.3,"4"0.4,"5"0.5)
+plot "He2.dat" with line title "X_4","C2.dat"with line title "X_{12}","O.dat"with line title "X_{16}","Ne.dat"with line title "X_{20}"
+set terminal postscript eps enhanced color
+set xlabel "t  [10^6 years]"
+set ylabel "X_4 , X_{12} , X_{16} , X_{20}"
+set output "He-burn.eps"
+plot "He2.dat" with line title "X_4","C2.dat"with line title "X_{12}","O.dat"with line title "X_{16}","Ne.dat"with line title "X_{20}"
+set term window

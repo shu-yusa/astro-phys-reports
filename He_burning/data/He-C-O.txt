@@ -1,0 +1,11 @@
+#set xrange [0:0.5]
+#set yrange [0:1]
+#unset key
+set xtics ("1"-1,"0.9"-0.9,"0.8"-0.8,"0.7"-0.7,"0.6"-0.6,"0.5"-0.5,"0.4"-0.4,"0.3"-0.3,"0.2"-0.2,"0.1"-0.1,"0"0)
+plot "He-C2.dat" with line 
+set terminal postscript eps enhanced color
+set xlabel "X_4"
+set ylabel "X_{12} , X_{16}"
+set output "He-C-O.eps"
+plot "He-C2.dat" with line title "X_{12}","He-O2.dat"with line title "X_{16}"
+set term window

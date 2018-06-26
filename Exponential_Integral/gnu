@@ -1,0 +1,30 @@
+set term postscript eps enhanced color
+set output 'Exp_Int.eps'
+set xrange [0:3]
+set yrange [0:1.2]
+set size 0.6,0.6
+set style line 1 lt 7
+unset label
+set label 'n=2' at first 0.52, first 0.4
+set label 'n=6' at first 0.1,first 0.08
+set xlabel 'x'
+set ylabel 'E_n(x)'
+plot 'Exp_Int2.dat'with line title 'E_2(x)',\
+     'Exp_Int3.dat'with line title 'E_3(x)',\
+     'Exp_Int4.dat'with line title 'E_4(x)',\
+     'Exp_Int5.dat'with line title 'E_5(x)',\
+     'Exp_Int6.dat'with line title 'E_6(x)'ls 1
+set term x11
+
+#For a report of a lecture.
+set yrange [-0.03:0]
+set xtics
+set nokey
+set term postscript eps enhanced color
+set output "Error_of_flux.eps"
+set xlabel "{/Symbol t}"
+set ylabel "{/Symbol D}F({/Symbol t})/F"
+set size 0.5 ,0.5
+plot 'Error_of_flux.dat'with line
+set term x11
+

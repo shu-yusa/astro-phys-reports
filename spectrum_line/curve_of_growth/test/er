@@ -1,0 +1,117 @@
+fitting.f90(77): warning #6477: Fortran 2003 はこの文または宣言子を許可しません。
+!$OMP parallel default(none) shared(ndata,fac,beta0,W) private(j)
+------^
+fitting.f90(78): warning #6477: Fortran 2003 はこの文または宣言子を許可しません。
+!$OMP do
+------^
+fitting.f90(88): warning #6477: Fortran 2003 はこの文または宣言子を許可しません。
+!$OMP end do
+----------^
+fitting.f90(89): warning #6477: Fortran 2003 はこの文または宣言子を許可しません。
+!$OMP end parallel
+----------^
+fitting.f90(39): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(632): (col. 9) remark: ループがベクトル化されました。.
+fitting.f90(636): (col. 14) remark: ループがベクトル化されました。.
+fitting.f90(78): (col. 7) remark: OpenMP 定義ループが並列化されました。.
+fitting.f90(77): (col. 7) remark: OpenMP 定義領域が並列化されました。.
+fitting.f90(74): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(83): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(83): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(83): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(85): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(85): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(85): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(85): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(85): (col. 16) remark: ループがベクトル化されました。.
+fitting.f90(133): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(182): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(189): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(196): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(203): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(205): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(212): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(219): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(226): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(229): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(236): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(243): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(250): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(253): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(266): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(279): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(292): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(307): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(310): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(317): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(324): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(331): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(333): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(344): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(355): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(366): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(369): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(380): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(391): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(402): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(405): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(413): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(421): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(429): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(432): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(437): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(442): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(447): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(450): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(456): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(462): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(468): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(471): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(480): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(489): (col. 7) remark: BLOCK がベクトル化されました。.
+fitting.f90(498): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(520): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(521): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(522): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(523): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(525): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(526): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(527): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(528): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(534): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(535): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(698): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(700): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(720): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(799): (col. 13) remark: ループがベクトル化されました。.
+fitting.f90(800): (col. 15) remark: ループがベクトル化されました。.
+fitting.f90(800): (col. 15) remark: ループがベクトル化されました。.
+fitting.f90(800): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(801): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(802): (col. 12) remark: ループがベクトル化されました。.
+fitting.f90(808): (col. 13) remark: ループがベクトル化されました。.
+fitting.f90(808): (col. 13) remark: ループがベクトル化されました。.
+fitting.f90(808): (col. 9) remark: ループがベクトル化されました。.
+fitting.f90(809): (col. 17) remark: ループがベクトル化されました。.
+fitting.f90(809): (col. 37) remark: ループがベクトル化されました。.
+fitting.f90(810): (col. 9) remark: ループがベクトル化されました。.
+fitting.f90(812): (col. 21) remark: ループがベクトル化されました。.
+fitting.f90(812): (col. 21) remark: ループがベクトル化されました。.
+fitting.f90(812): (col. 13) remark: ループがベクトル化されました。.
+fitting.f90(814): (col. 13) remark: ループがベクトル化されました。.
+fitting.f90(816): (col. 14) remark: ループがベクトル化されました。.
+fitting.f90(818): (col. 18) remark: ループがベクトル化されました。.
+fitting.f90(818): (col. 38) remark: ループがベクトル化されました。.
+fitting.f90(819): (col. 9) remark: ループがベクトル化されました。.
+fitting.f90(744): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(755): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(759): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(781): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(835): (col. 7) remark: ループがベクトル化されました。.
+fitting.f90(664): (col. 29) remark: ループがベクトル化されました。.
+fitting.f90(665): (col. 13) remark: PARTIAL LOOP がベクトル化されました。.
+fitting.f90(152): (col. 12) remark: ループがベクトル化されました。.
+fitting.f90(156): (col. 14) remark: ループがベクトル化されました。.
+fitting.f90(159): (col. 14) remark: ループがベクトル化されました。.
+fitting.f90(163): (col. 12) remark: ループがベクトル化されました。.
+fitting.f90(166): (col. 12) remark: ループがベクトル化されました。.

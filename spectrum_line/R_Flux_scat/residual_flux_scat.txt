@@ -1,0 +1,67 @@
+set term postscript eps enhanced color
+set output 'residual_flux_scat_1.eps'
+
+set xrange [0:10]
+unset tics
+set xtics 1
+set ytics 0.2
+unset label
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label 'B_1/B_0=1' at first 7,first 0.25
+set samples 4000
+unset grid
+set size 0.6,0.5
+unset key
+plot 'residual_flux_B1_beta_0_scat.dat'with line,\
+     'residual_flux_B1_beta_1_scat.dat'with line,\
+     'residual_flux_B1_beta_2_scat.dat'with line,\
+     'residual_flux_B1_beta_3_scat.dat'with line,\
+     'residual_flux_B1_beta_4_scat.dat'with line
+set term x11
+
+set term postscript eps enhanced color
+set output 'residual_flux_scat_2.eps
+
+set xrange [0:10]
+unset tics
+set xtics 1
+set ytics 0.2
+unset label
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label 'B_1/B_0=2' at first 7,first 0.25
+set samples 4000
+unset grid
+set size 0.6,0.5
+unset key
+plot 'residual_flux_B2_beta_0_scat.dat'with line,\
+     'residual_flux_B2_beta_1_scat.dat'with line,\
+     'residual_flux_B2_beta_2_scat.dat'with line,\
+     'residual_flux_B2_beta_3_scat.dat'with line,\
+     'residual_flux_B2_beta_4_scat.dat'with line
+set term x11
+
+set term postscript eps enhanced color
+set output 'residual_flux_scat_3.eps
+
+set xrange [0:10]
+unset tics
+set xtics 1
+set ytics 0.2
+unset label
+set xlabel 'v'
+set ylabel 'R_{/Symbol n}'
+set label 'B_1/B_0=3' at first 7,first 0.25
+set samples 4000
+unset grid
+set size 0.6,0.5
+unset key
+plot 'residual_flux_B3_beta_0_scat.dat'with line,\
+     'residual_flux_B3_beta_1_scat.dat'with line,\
+     'residual_flux_B3_beta_2_scat.dat'with line,\
+     'residual_flux_B3_beta_3_scat.dat'with line,\
+     'residual_flux_B3_beta_4_scat.dat'with line
+set term x11
+
+
